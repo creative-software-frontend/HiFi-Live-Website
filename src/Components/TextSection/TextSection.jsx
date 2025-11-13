@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo1 from '../../assets/1logo.png';
+import Logo1 from '../../assets/logo.png';
 
 const TextSection = () => {
   return (
