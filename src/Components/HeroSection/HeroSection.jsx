@@ -1,5 +1,5 @@
-import React from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import React, { useRef } from 'react';
+import { motion, useScroll, useTransform, useInView } from 'framer-motion';
 import TitleImage from '../../assets/titleImage.png';
 import Phone from '../../assets/phone.png';
 import MciIcon from '../../assets/icon_mic.png';
@@ -9,8 +9,11 @@ import { FaGooglePlay, FaAppStore } from 'react-icons/fa';
 import { SiHuawei } from 'react-icons/si';
 
 const HeroSection = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: false });
+
   // Scroll tracking
-  const { scrollYProgress } = useScroll();
+  const { scrollYProgress } = useScroll({ target: ref });
 
   // Text animation
   const textY = useTransform(scrollYProgress, [0, 0.5], [0, -200]); // move up
@@ -29,24 +32,27 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="relative min-h-[200vh] bg-gradient-to-br from-[#39C8C3] via-[#ABE9BA] to-[#187DAA] flex flex-col items-center justify-center overflow-hidden rounded-4xl -mt-20">
+    <div
+      ref={ref}
+      className="relative min-h-[calc(200vh-600px)]  bg-gradient-to-br from-[#39C8C3] via-[#ABE9BA] to-[#187DAA] flex flex-col items-center justify-center overflow-hidden  -mt-20"
+    >
       {/* Text Section */}
       <motion.div
         style={{ y: textY, opacity: textOpacity }}
-        className="fixed top-[30%] text-center z-20 w-full flex justify-center h-48"
+        className="sticky top-[30%] text-center z-20 w-full flex justify-center h-48"
       >
-        <div className="flex gap-5 items-end ">
+        <div className="flex gap-5 items-end mb-20">
           {/* Left icon (floating) */}
           <motion.div
             animate={{ y: [0, -20, 0] }}
             transition={floatTransition}
-            className="flex items-end -mb-40"
+            className="flex items-end "
           >
             <img className="h-28" src={MciIcon} alt="" />
           </motion.div>
 
           {/* Text */}
-          <div className="ml-16 -mb-40">
+          <div className="ml-16 ">
             <h2 className="text-6xl md:text-8xl font-bold text-gray-700">
               Let's Party
             </h2>
@@ -96,7 +102,7 @@ const HeroSection = () => {
           </div>
 
           {/* Right icons (floating with delay) */}
-          <div className="flex flex-col gap-28 ml-16 -mb-40">
+          <div className="flex flex-col gap-28 ml-16 ">
             <motion.img
               className="h-20"
               src={VideoIcon}
@@ -115,14 +121,14 @@ const HeroSection = () => {
         </div>
       </motion.div>
 
-      {/* Phone Image Section with Enhanced Video Background */}
+      {/* Phone Image Section */}
       <motion.div
         style={{
           y: phoneY,
           opacity: phoneOpacity,
         }}
         transition={{ type: 'spring', stiffness: 80, damping: 20 }}
-        className="fixed bottom-0 left-1/2 -translate-x-1/2 h-[1000px] w-full z-10 mb-36 rounded-3xl shadow-2xl overflow-hidden flex items-center"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[1200px] w-full z-10 rounded-3xl shadow-2xl overflow-hidden flex items-center justify-center mt-40"
       >
         {/* Video Background */}
         <video
@@ -133,7 +139,7 @@ const HeroSection = () => {
           className="absolute inset-0 w-full h-full object-cover"
         >
           <source
-            src="https://cdn.dribbble.com/userupload/25383613/file/large-7573762a9916c35515e07edf77dda214.mp4"
+            src="https://www.pexels.com/download/video/34623171/"
             type="video/mp4"
           />
         </video>
@@ -141,10 +147,11 @@ const HeroSection = () => {
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/40 z-10" />
 
+        {/* Phone Image */}
         <img
           src={Phone}
           alt="Phone"
-          className="h-[700px] w-auto mx-auto relative z-20 drop-shadow-2xl mt-36"
+          className="h-[700px] w-auto relative z-20 drop-shadow-2xl"
         />
       </motion.div>
     </div>
