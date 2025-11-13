@@ -10,7 +10,7 @@ const GlobalTeam = () => {
           FEATURE
         </span>
         <h2 className="text-4xl md:text-6xl font-semibold text-center mt-4">
-          Join Taka Global Team - <br />
+          Join HiFi Global Team - <br />
           <span className="flex justify-center gap-4 items-center pt-4">
             <img
               className="h-12 md:h-14"
@@ -27,11 +27,11 @@ const GlobalTeam = () => {
         {/* Left Side - Content */}
         <div className="flex-1 bg-white rounded-2xl shadow-lg p-8">
           <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
-            Grow Together with Taka's Referral Program!
+            Grow Together with HiFi's Referral Program!
           </h3>
 
           <p className="text-lg text-gray-600 mb-6 font-medium">
-            Big earnings await! Join taka - become agency or host.
+            Big earnings await! Join HiFi - become agency or host.
           </p>
 
           {/* Checklist Items */}
@@ -82,7 +82,7 @@ const GlobalTeam = () => {
         <div className="flex-1">
           <img
             src={FutureImage}
-            alt="Taka Referral Program"
+            alt="HiFi Referral Program"
             className="w-full h-auto rounded-2xl shadow-lg"
           />
         </div>

@@ -10,7 +10,7 @@ const TextSection = () => {
           <div className="flex-shrink-0">
             <img
               src={Logo1}
-              alt="Taka Logo "
+              alt="HiFi Logo "
               className="w-32 h-32 md:w-40 md:h-40 object-contain rotate-6"
             />
           </div>
@@ -18,7 +18,7 @@ const TextSection = () => {
           {/* Text Content */}
           <div className="flex-1 text-center ">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
-              Taka - Social, But Fun
+              HiFi - Social, But Fun
             </h1>
             <p className="text-3xl font-bold text-gray-600 mb-8 leading-relaxed">
               Turn chats into adventures! Share moments, laugh together, and

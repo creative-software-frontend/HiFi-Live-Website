@@ -64,20 +64,20 @@ const HeroSection = () => {
             </div>
             <div className="text-xl mt-4">
               <p>
-                Chat live with your favorite creators and celebrities on Taka!
+                Chat live with your favorite creators and celebrities on HIFI!
               </p>
 
               {/* App Store Badges */}
               <div className="mt-8">
                 <div className="flex flex-col md:flex-row gap-4">
                   {/* Google Play */}
-                  <div className="bg-black text-white px-6 py-3 rounded-lg flex items-center gap-3 hover:bg-gray-800 transition-colors cursor-pointer max-w-xs">
+                  <a href="https://drive.google.com/file/d/14lGAOQtCKYsAfyufvi-0FKkYPAcjg0A1/view?usp=sharing"><div className="bg-black text-white px-6 py-3 rounded-lg flex items-center gap-3 hover:bg-gray-800 transition-colors cursor-pointer max-w-xs">
                     <FaGooglePlay className="w-8 h-8" />
                     <div>
                       <p className="text-xs text-gray-300">Download on the</p>
                       <p className="text-lg font-semibold">Google Play</p>
                     </div>
-                  </div>
+                  </div></a>
 
                   {/* App Store */}
                   <div className="bg-black text-white px-6 py-3 rounded-lg flex items-center gap-3 hover:bg-gray-800 transition-colors cursor-pointer max-w-xs">

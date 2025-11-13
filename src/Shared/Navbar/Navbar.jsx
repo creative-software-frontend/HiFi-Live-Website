@@ -41,10 +41,10 @@ const Navbar = () => {
           My Account
         </a>
         <a
-          href="#download"
+          href="https://drive.google.com/file/d/14lGAOQtCKYsAfyufvi-0FKkYPAcjg0A1/view?usp=sharing"
           className="bg-[#1d9fd6] text-white px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl hover:bg-green-400 transition-colors duration-200 text-sm sm:text-base whitespace-nowrap font-semibold"
         >
-          Download Taka
+          Download HiFi Live
         </a>
       </div>
     </nav>
