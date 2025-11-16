@@ -33,12 +33,12 @@ const cornerImages = [
 
 const Footer = () => {
   return (
-    <div className="relative w-full min-h-[600px] bg-[#DFF7F4] overflow-hidden flex items-center justify-center rounded-t-[50px]">
+    <div className="relative w-full min-h-[700px] bg-[#DFF7F4] overflow-hidden flex items-center justify-center rounded-t-[50px]">
       {/* Orbit Rings */}
-      <div className="absolute w-[900px] h-[900px] border border-green-300 rounded-full opacity-50"></div>
-      <div className="absolute w-[700px] h-[700px] border border-green-300 rounded-full opacity-40"></div>
-      <div className="absolute w-[500px] h-[500px] border border-green-300 rounded-full opacity-30"></div>
-      <div className="absolute w-[300px] h-[300px] border border-green-300 rounded-full opacity-20"></div>
+      <div className="absolute w-[900px] h-[900px] border border-green-400 rounded-full opacity-50"></div>
+      <div className="absolute w-[700px] h-[700px] border border-green-400 rounded-full opacity-40"></div>
+      <div className="absolute w-[500px] h-[500px] border border-green-400 rounded-full opacity-30"></div>
+      <div className="absolute w-[300px] h-[300px] border border-green-400 rounded-full opacity-20"></div>
 
       {/* Corner Photos */}
       {cornerImages.map((item, index) => (
