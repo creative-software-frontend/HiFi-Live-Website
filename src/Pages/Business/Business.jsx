@@ -9,7 +9,7 @@ const Business = () => {
       icon: '💰',
       title: 'Easy Income',
       description:
-        'Just play taka and you can get income. Whether you invite friends or chat on the mic, you can gain friendship and income.',
+        'Just play HIFI and you can get income. Whether you invite friends or chat on the mic, you can gain friendship and income.',
       gradient: 'from-green-400 to-blue-500',
     },
     {
@@ -23,34 +23,33 @@ const Business = () => {
       icon: '🚀',
       title: 'Fast & Direct Growth',
       description:
-        'Join Taka now and you can enjoy the dividends of rapid growth; missing out will be a huge loss for you.',
+        'Join HIFI now and you can enjoy the dividends of rapid growth; missing out will be a huge loss for you.',
       gradient: 'from-orange-400 to-red-500',
     },
   ];
   return (
-    <section className="bg-gradient-to-b from-green-200 to-white -mt-20 pt-72">
-      <div
-        className="h-[600px] w-[1050px] bg-cover bg-center bg-no-repeat flex items-center px-6 rounded-2xl mx-auto "
-        style={{
-          backgroundImage: `url(${BackgroundImage})`,
-        }}
-      >
-        <h2 className="text-3xl md:text-5xl font-bold text-black drop-shadow-lg text-center -mt-[650px]">
-          <span className="text-xl font-normal bg-green-300 py-1 px-4 rounded-xl">
-            {' '}
+    <section className="bg-gradient-to-b from-green-200 to-white -mt-20 md:pt-72">
+      {/* <div className="relative h-[60vh] w-full bg-cover bg-center flex items-center justify-center px-4 md:px-6 rounded-2xl mx-auto">
+      
+      </div> */}
+
+      <section className="max-w-7xl mx-auto md:-mt-50 md:py-20">
+        <div className=" pt-32 pb-20 md:pb-32 md:pt-4 text-center">
+          <span className="text-base md:text-lg font-normal bg-green-300 py-1 px-3 md:px-4 rounded-xl">
             Business
-          </span>{' '}
-          <br /> Grow Together with Taka’s Referral Program!
-        </h2>
-      </div>
-      <section className="max-w-7xl mx-auto -mt-50 py-20">
+          </span>
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-black drop-shadow-lg text-center">
+            <br />
+            Grow Together with HIFI’s Referral Program!
+          </h2>
+        </div>
         {/* card one */}
         <div className="bg-[#F4F6F8] rounded-2xl shadow-lg p-8">
           <div className="flex flex-col lg:flex-row gap-8 items-center">
             <div className="flex-1">
               <img
                 src={businessInfo1}
-                className="h-96 w-full  rounded-2xl shadow-lg"
+                className="h-80 md:h-96 w-full  rounded-2xl shadow-lg"
               />
             </div>
 
@@ -146,7 +145,7 @@ const Business = () => {
                 Why Choose HIFI?
               </h2>
               <p className="text-xl text-gray-800  max-w-3xl mx-auto">
-                Discover the amazing features that make Taka the perfect
+                Discover the amazing features that make HIFI the perfect
                 platform for socializing and earning
               </p>
             </div>
