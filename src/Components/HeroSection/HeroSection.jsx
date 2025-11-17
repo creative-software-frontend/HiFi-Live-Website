@@ -34,7 +34,7 @@ const HeroSection = () => {
   return (
     <div
       ref={ref}
-      className="relative min-h-[calc(200vh-600px)]  bg-gradient-to-br from-[#39C8C3] via-[#ABE9BA] to-[#187DAA] flex flex-col items-center justify-center overflow-hidden  -mt-20"
+      className="relative min-h-[calc(200vh-600px)]  bg-gradient-to-br from-[#39C8C3] via-[#ABE9BA] to-[#187DAA] flex flex-col items-center justify-center overflow-hidden  md:-mt-20"
     >
       {/* Text Section */}
       <motion.div
@@ -71,13 +71,15 @@ const HeroSection = () => {
               <div className="mt-8">
                 <div className="flex flex-col md:flex-row gap-4">
                   {/* Google Play */}
-                  <a href="https://drive.google.com/file/d/14lGAOQtCKYsAfyufvi-0FKkYPAcjg0A1/view?usp=sharing"><div className="bg-black text-white px-6 py-3 rounded-lg flex items-center gap-3 hover:bg-gray-800 transition-colors cursor-pointer max-w-xs">
-                    <FaGooglePlay className="w-8 h-8" />
-                    <div>
-                      <p className="text-xs text-gray-300">Download on the</p>
-                      <p className="text-lg font-semibold">Google Play</p>
+                  <a href="https://drive.google.com/file/d/14lGAOQtCKYsAfyufvi-0FKkYPAcjg0A1/view?usp=sharing">
+                    <div className="bg-black text-white px-6 py-3 rounded-lg flex items-center gap-3 hover:bg-gray-800 transition-colors cursor-pointer max-w-xs">
+                      <FaGooglePlay className="w-8 h-8" />
+                      <div>
+                        <p className="text-xs text-gray-300">Download on the</p>
+                        <p className="text-lg font-semibold">Google Play</p>
+                      </div>
                     </div>
-                  </div></a>
+                  </a>
 
                   {/* App Store */}
                   <div className="bg-black text-white px-6 py-3 rounded-lg flex items-center gap-3 hover:bg-gray-800 transition-colors cursor-pointer max-w-xs">

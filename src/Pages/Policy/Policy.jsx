@@ -9,11 +9,11 @@ const Policy = () => {
       content: `
         By accessing and using this website, you confirm that you have carefully read, understood, and agreed to the following terms and conditions ("Terms"). Please ensure that you fully comprehend these Terms before proceeding, as your use of the website is governed by them.
 
-        These Terms constitute a legally binding agreement ("Agreement") between you, the user ("you," "your," or "user"), and TAKA INNOVATIONS ("Company"). Each of you and the Company may be referred to individually as a "Party" and collectively as the "Parties."
+        These Terms constitute a legally binding agreement ("Agreement") between you, the user ("you," "your," or "user"), and HIFI INNOVATIONS ("Company"). Each of you and the Company may be referred to individually as a "Party" and collectively as the "Parties."
 
-        If you do not agree with any part of these Terms, you must immediately cease accessing and using the website and any services provided under these Terms. By accepting these Terms, you enter into a binding Agreement with TAKA INNOVATIONS regarding your use of the website and/or subscription to the available services.
+        If you do not agree with any part of these Terms, you must immediately cease accessing and using the website and any services provided under these Terms. By accepting these Terms, you enter into a binding Agreement with HIFI INNOVATIONS regarding your use of the website and/or subscription to the available services.
 
-        TAKA INNOVATIONS owns and operates the website and application known as "Taka," which are referenced herein. Through this platform, the Company provides users with a simple and reliable way to connect with friends nearby or around the world. The services enable users to send free text, voice, video, photo messages, and stickers to their contacts. Designed to be an enjoyable and engaging experience, the Commonwealth's motivations, preferences, and friendly environment for all users is wise.
+        HIFI INNOVATIONS owns and operates the website and application known as "HIFI," which are referenced herein. Through this platform, the Company provides users with a simple and reliable way to connect with friends nearby or around the world. The services enable users to send free text, voice, video, photo messages, and stickers to their contacts. Designed to be an enjoyable and engaging experience, the Commonwealth's motivations, preferences, and friendly environment for all users is wise.
       `,
     },
     privacy: {
@@ -28,7 +28,7 @@ const Policy = () => {
         - Send you technical notices and support messages
         - Respond to your comments and questions
         - Develop new services and features
-        - Protect the rights and property of TAKA INNOVATIONS and others
+        - Protect the rights and property of HIFI INNOVATIONS and others
 
         We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.
       `,
@@ -36,7 +36,7 @@ const Policy = () => {
     child: {
       title: 'Child Safety Policy',
       content: `
-        The safety of our younger users is of utmost importance to TAKA INNOVATIONS. We are committed to creating a safe and secure environment for users of all ages.
+        The safety of our younger users is of utmost importance to HIFI INNOVATIONS. We are committed to creating a safe and secure environment for users of all ages.
 
         Our platform includes several safety features:
         - Age verification systems
@@ -53,25 +53,8 @@ const Policy = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#e9faf9] py-12 px-4 -mt-30">
+    <div className="min-h-screen bg-[#e9faf9] py-5 md:py-12 px-4 -mt-30">
       <div className="max-w-6xl mx-auto mt-40">
-        {/* Header Section */}
-        <div className="text-center mb-12">
-          <h1 className="text-5xl font-bold bg-gradient-to-r from-teal-600 to-blue-600 bg-clip-text text-transparent mb-6">
-            # POLICY
-          </h1>
-          <div className="bg-white rounded-2xl p-8 shadow-xl border border-teal-100">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">
-              Our Privacy Policy
-            </h2>
-            <p className="text-lg text-gray-600 leading-relaxed">
-              Our Privacy Policy outlines how we collect, use, and protect your
-              personal information. Your privacy and security are our
-              priorities.
-            </p>
-          </div>
-        </div>
-
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           {/* Sidebar Navigation */}
           <div className="lg:col-span-1">
@@ -153,7 +136,7 @@ const Policy = () => {
                     Important Notice
                   </h4>
                   <p className="text-gray-600">
-                    These policies are legally binding. By using Taka services,
+                    These policies are legally binding. By using HIFI services,
                     you acknowledge that you have read, understood, and agree to
                     be bound by these terms. We recommend reviewing these
                     policies regularly as they may be updated.
@@ -165,13 +148,13 @@ const Policy = () => {
                   <div className="flex items-center gap-2 px-4 py-2 bg-teal-50 rounded-lg border border-teal-200">
                     <span className="text-teal-600">📧</span>
                     <span className="text-sm text-teal-700">
-                      legal@taka.com
+                      legal@HIFI.com
                     </span>
                   </div>
                   <div className="flex items-center gap-2 px-4 py-2 bg-blue-50 rounded-lg border border-blue-200">
                     <span className="text-blue-600">🌐</span>
                     <span className="text-sm text-blue-700">
-                      www.taka.com/legal
+                      www.HIFI.com/legal
                     </span>
                   </div>
                 </div>

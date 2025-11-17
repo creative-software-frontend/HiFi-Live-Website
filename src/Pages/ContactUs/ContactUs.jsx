@@ -23,7 +23,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#e9faf9] py-12 px-4 -mt-20">
+    <div className="min-h-screen bg-[#e9faf9] py-5 md:py-12 px-4 -mt-20">
       <div className="max-w-7xl mx-auto mt-28">
         {/* Header Section */}
         <div className="text-center mb-16">
@@ -37,6 +37,54 @@ const ContactUs = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          {/* Contact Information Section */}
+          <div className="bg-gradient-to-br from-teal-500 to-blue-500 rounded-3xl shadow-2xl p-8 lg:p-12 text-white border border-teal-400">
+            <div className="h-full flex flex-col justify-center">
+              <h2 className="text-3xl font-bold mb-6">
+                Hey, <br />
+                Contact our team
+              </h2>
+              <p className="text-teal-100 text-lg mb-8">
+                Have a question or need assistance? Our team is ready to help
+                you tackle any challenge!
+              </p>
+
+              {/* Contact Methods */}
+              <div className="space-y-8">
+                {/* Email */}
+                <div className="flex items-start space-x-4 group cursor-pointer">
+                  <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 border border-white/30">
+                    <span className="text-xl">📧</span>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-white mb-1">Email</h3>
+                    <p className="text-teal-100 group-hover:text-white transition-colors duration-300">
+                      support@HIFI.com
+                    </p>
+                  </div>
+                </div>
+
+                {/* Live Chat */}
+                <div className="flex items-start space-x-4 group cursor-pointer">
+                  <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 border border-white/30">
+                    <span className="text-xl">💬</span>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-white mb-1">Live Chat</h3>
+                    <p className="text-teal-100 group-hover:text-white transition-colors duration-300">
+                      Available 24/7
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Decorative Elements */}
+              <div className="mt-12 relative">
+                <div className="absolute -top-4 -left-4 w-8 h-8 border-2 border-white/40 rounded-full animate-ping"></div>
+                <div className="absolute -bottom-4 -right-4 w-6 h-6 border-2 border-white/40 rounded-full animate-pulse"></div>
+              </div>
+            </div>
+          </div>
           {/* Contact Form Section */}
           <div className="bg-white rounded-3xl shadow-2xl p-8 lg:p-12 border border-teal-100">
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -125,78 +173,6 @@ const ContactUs = () => {
                 <span className="text-xl">🚀</span>
               </button>
             </form>
-          </div>
-
-          {/* Contact Information Section */}
-          <div className="bg-gradient-to-br from-teal-500 to-blue-500 rounded-3xl shadow-2xl p-8 lg:p-12 text-white border border-teal-400">
-            <div className="h-full flex flex-col justify-center">
-              <h2 className="text-3xl font-bold mb-6">CONTACT US</h2>
-              <p className="text-teal-100 text-lg mb-8">
-                Chat to our friendly team. We'd love to hear from you! Please
-                get in touch.
-              </p>
-
-              {/* Contact Methods */}
-              <div className="space-y-8">
-                {/* Phone */}
-                <div className="flex items-start space-x-4 group cursor-pointer">
-                  <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 border border-white/30">
-                    <span className="text-xl">📞</span>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-white mb-1">Phone</h3>
-                    <p className="text-teal-100 group-hover:text-white transition-colors duration-300">
-                      +65 91306961
-                    </p>
-                  </div>
-                </div>
-
-                {/* Email */}
-                <div className="flex items-start space-x-4 group cursor-pointer">
-                  <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 border border-white/30">
-                    <span className="text-xl">📧</span>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-white mb-1">Email</h3>
-                    <p className="text-teal-100 group-hover:text-white transition-colors duration-300">
-                      support@taka.com
-                    </p>
-                  </div>
-                </div>
-
-                {/* Live Chat */}
-                <div className="flex items-start space-x-4 group cursor-pointer">
-                  <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 border border-white/30">
-                    <span className="text-xl">💬</span>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-white mb-1">Live Chat</h3>
-                    <p className="text-teal-100 group-hover:text-white transition-colors duration-300">
-                      Available 24/7
-                    </p>
-                  </div>
-                </div>
-
-                {/* Office Address */}
-                <div className="flex items-start space-x-4 group cursor-pointer">
-                  <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 border border-white/30">
-                    <span className="text-xl">🏢</span>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-white mb-1">Office</h3>
-                    <p className="text-teal-100 group-hover:text-white transition-colors duration-300">
-                      Singapore, Central Business District
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Decorative Elements */}
-              <div className="mt-12 relative">
-                <div className="absolute -top-4 -left-4 w-8 h-8 border-2 border-white/40 rounded-full animate-ping"></div>
-                <div className="absolute -bottom-4 -right-4 w-6 h-6 border-2 border-white/40 rounded-full animate-pulse"></div>
-              </div>
-            </div>
           </div>
         </div>
 
